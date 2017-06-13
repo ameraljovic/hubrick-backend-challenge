@@ -1,23 +1,12 @@
-# Files
+# Synopsis
+Solution for code challenge from [Hubrick](https://github.com/hubrick/hubrick-backend-challenge)
 
-There are three commma separated files in `data` directory:
+# Prerequisites 
+* Oracle JDK 1.8
+* Maven
 
- * departments.csv  - list of departments
- * employees.csv    - first column contains position of department in alphabetically sorted department list, followed by employee name and salary
- * ages.csv         - first column contains employee name, followed by age
+# Running Program
+Just execute `./run.sh <path to data directory>`
 
-# Challenge
-
-Write a Java program that will generate the following reports in corresponding files.
-
- * income-by-department.csv - median income by department
- * income-95-by-department.csv - 95-percentile income by department
- * income-average-by-age-range.csv - average income by age ranges with factor of ten
- * employee-age-by-department.csv - median employee age by department
-
-Reports must be generated in a comma separated format with header columns.
-
-# Conditions
-
- * Code should be compilable with Oracle JDK 1.8 and run with path to directory containing data files as first parameter.
- * Only libraries that are part of Oracle Java Runtime are allowed in production code.
+It could be that the command fails because the user does not have permissions to execute the file. In that case execute 
+first `chmod +x`
